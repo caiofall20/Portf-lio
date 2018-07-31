@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Design Responsivo</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-home.css">
+    <link rel="stylesheet" href="css/style-pagina.css">
+    <link rel="stylesheet" href="css/style-contato.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <h1 class="logo">Caio Mateus</h1>
+        <a href="index.html" class="logo">Caio Mateus</a>
         <nav>
             <button class="menu-principal_btn">Abrir/fechar menu</button>
             <ul class="menu-principal__lista">
                 <li>
-                    <a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a>
+                    <a class="menu-principal__item" href="index.html">Home</a>
                 </li>
                 <li>
                     <a class="menu-principal__item" href="sobre.html">Sobre</a>
@@ -27,56 +28,42 @@
                     <a class="menu-principal__item" href="portifolio.html">Portifolio</a>
                 </li>
                 <li>
-                    <a class="menu-principal__item" href="contato.html">Contato</a>
+                    <a class="menu-principal__item menu-principal__item--atual" href="contato.html">Contato</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <header class="cabecalho-home">
-            <h2 class="cabecalho-home__titulo">Texto bem grande aqui!</h2>
-            <p class="cabecalho-home__subtitulo">texto menorzinho aqui</p>
-            <a href="#servicos ">rola para ver mais</a>
+        <header class="pagina-cabecalho">
+            <h1 class="pagina-cabecalho__titulo">Contato</h1>
         </header>
-        <!-- Seção Serviços-->
-        <section id="servicos " class="servicos">
-            <h2 class="home__titulo">O que fazemos</h2>
-            <section class="servicos__item">
-                <img src="img/icone-desenvolvimento-web.png" alt="Icone desenvolvimento web">
-                <h3>Desenvolvimento Web</h3>
-                <p class="servicos__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dolor est officiis omnis incidunt, amet
-                    eveniet unde libero ipsam quibusdam recusandae, dicta delectus. Aut fugit accusamus molestias impedit
-                    sequi vel! </p>
-            </section>
-            <section class="servicos__item" >
-                <img src="img/icone-carrinho-compras.png" alt="icone carrinho de compras">
-                <h3>E-commerce</h3>
-                <p class="servicos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nulla aspernatur fugiat excepturi officia
-                    id, assumenda doloribus consequuntur illo fugit alias reprehenderit, aperiam libero nam ex expedita exercitationem,
-                    at debitis.</p>
-                <p class="servicos__texto"></p>
-            </section>
-            <section class="servicos__item">
-                <img src="img/icone-cafe.png" alt="icone xícara de café">
-                <h3>Café</h3>
-                <p class="servicos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at quisquam odio nesciunt voluptatibus
-                    pariatur soluta dolores hic, laboriosam omnis aut voluptatem eaque voluptates commodi eveniet. Veniam
-                    placeat nisi autem.</p>
-            </section>
+        <section class="pagina-conteudo">
+            <p class="text-center">Lorem ipsum dolor.</p>
+            <form action="#" class="formulario">
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="nome">Nome</label>
+                    <br>
+                    <input class="formulario__campo" type="text" name="nome">
+                </div>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="email">E-mail</label>
+                    <br>
+                    <input class="formulario__campo" id="email" type="email" name="email">
+                </div>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="mensagem">Mensagem</label>
+                    <br>
+                    <textarea  class="formulario__campo" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+                <input class="formulario__botao " type="submit" value="Enviar">
+            </form>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi a dicta hic. Ab nisi adipisci maxime
+                quis sequi ullam enim minus.</br> Temporibus incidunt doloribus libero recusandae, quas error dignissimos!</p>
+            <div class="mapa">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126992.68421005116!2d-35.211100800000025!3d-5.922608599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1531917353569"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> 
+            </div>
         </section>
-        <!--Fim seção serviços-->
-        <!--Seção depoimentos-->
-        <section class="depoimentos">
-            <h2 class="home__titulo home__titulo--branco" >O que falam de nós</h2>
-            <section class="depoimentos__item">
-                <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="">
-                <p class="depoimentos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorem dolores? Beatae quo voluptatem
-                    nemo doloribus totam minima repellendus voluptates ipsum, distinctio delectus soluta, quae vel! Facere
-                    doloribus aut possimus.</p>
-                <p class="depoimentos__pessoa">Nome Pessoa - Cargo</p>
-            </section>
-        </section>
-        <!--fim seção depoimentos-->
     </main>
     <footer class="rodape">
         <div class="rodape__linha-1">
